@@ -1,9 +1,9 @@
 package com.myDomain.myLibrary;
 
+import java.util.ArrayList;
 import processing.core.PApplet;
 import processing.core.PConstants;
 
-import java.util.ArrayList;
 
 /**
  * This is an example class within library myLibrary.
@@ -54,7 +54,7 @@ public class Grid {
      */
     public void show() {
         for (Dot d : dots) {
-            d.update();
+            d.update(); //      
             d.display();
         }
     }
@@ -62,7 +62,7 @@ public class Grid {
     // Dot is an inline class of the Grid class.
     private class Dot {
 
-        float xpos, ypos;
+        float xpos, ypos; 
         float diameterOriginal, diameterCurrent;
         float pulseValue, pulseSpeed;
         int colorFill;
@@ -75,7 +75,7 @@ public class Grid {
          * @param d diameter of the dot
          * @param s pulse speed of the dot
          * @param c color of the dot
-         */
+         */ 
         public Dot(float x, float y, float d, float s, int c) {
             xpos = x;
             ypos = y;

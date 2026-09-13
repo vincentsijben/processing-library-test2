@@ -1,6 +1,7 @@
 package com.myDomain.myLibrary;
 
-import processing.core.*;
+import processing.core.PApplet;
+import processing.core.PConstants;
 
 /**
  * This is an example class within library myLibrary.
@@ -25,6 +26,7 @@ public class Palette {
 
     /**
      * getPalette returns a an array containing five colors defined as integers
+     * @return testvincent
      */
     public int[] getPalette() {
         int numColors = 5;

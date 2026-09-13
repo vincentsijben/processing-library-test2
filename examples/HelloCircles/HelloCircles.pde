@@ -4,12 +4,13 @@ Palette p;
 Grid g;
 
 void setup() {
+  //test3
   size(1280, 720);
   p = new Palette(this);
   makeGrid();
 }
 
-void draw() {
+void draw() { 
   background(16);
   g.show();
   displayText();

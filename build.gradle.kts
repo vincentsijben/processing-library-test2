@@ -8,6 +8,7 @@ import org.gradle.internal.os.OperatingSystem
 
 plugins {
     id("java")
+    id("org.gradle.toolchains.foojay-resolver-convention").version("0.9.0")
 }
 
 // Sets the Java version to use for compiling your library.
@@ -77,7 +78,7 @@ if(currentOS.isMacOsX) {
 }
 // If you need to set the sketchbook location manually, uncomment out the following
 // line and set sketchbookLocation to the correct location
-// sketchbookLocation = "$userHome/sketchbook"
+sketchbookLocation = "$userHome/Docs/Processing"
 
 
 // Repositories where dependencies will be fetched from.
